@@ -1,0 +1,48 @@
+"""
+
+number = int(input("Введите число: "))
+percent = int(input("Введите процент: "))
+print(number * percent / 100)
+
+"""
+
+"""
+feedbaste = int(input("Введите сколько хомяк ест грамм корма в день: "))
+print(f"Нужно корм: {freedWaste * 30 / 1000 кг)
+
+"""
+
+"""
+number = int(input("Введите двухзначное число: "))
+discharge1 = number // 10
+discharge2 = number - (discharge1 * 10)
+print(discharge1, discharge2)
+
+"""
+
+"""
+total_seconds = int(input("Введите время в секундах: "))
+hours = total_seconds // 3600
+minutes = (total_seconds % 3600) // 60
+seconds = total_seconds % 60
+
+print(f"{hours} часов, {minutes} минут, {seconds} секунд")
+"""
+
+"""
+a = input("Введите первую цифру: ")
+b = input("Введите вторую цифру: ")
+
+result = a + b
+
+print(f"Сформирование число: {result}")
+"""
+
+"""
+number = int(input("Введите двухзначное число: "))
+if == 2 and number isdigit()
+first_digit = number[0]
+second_digit = number[1]
+print(first_digit, second_digit)
+"""
+
