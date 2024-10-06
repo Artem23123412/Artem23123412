@@ -1,55 +1,46 @@
-"""
 #1
-number = int(input("Введите первую цифру: "))
-number = number * 100
-number += int(input("Введите вторую цифру: ")) * 10
-number += int(input("Введите третью цифру: "))
-print("Число, содержащее введенные цифры:", number)
-"""
-"""
+N = int(input("Введите число: "))
+reversed_number = 0
+while N > 0:
+    reversed_number = reversed_number * 10 + N % 10
+    N //= 10
+print(reversed_number)
 #2
-number = int(input("Введите число из четырех цифр: "))
-product = 1
-
-while number > 0:
-digit = number % 10
-product *= digit
-number //= 10
-
-print("Произведение цифр числа:", product)
-"""
-"""
+N = int(input("Введите число: "))
+count = 0
+sum_cubes = 0
+while N > 0:
+    digit = N % 10
+    sum_cubes += digit * digit * digit
+    count += 1
+    N //= 10
+print(count, sum_cubes)
 #3
-meters = float(input("Enter the number of meters: "))
-
-cm = meters * 100
-dm = meters * 10
-mm = meters * 1000
-miles = meters * 0.000621371
-
-print(f"{meters} meters is equal to:")
-print(f"{cm} centimeters")
-print(f"{dm} decimeters")
-print(f"{mm} millimeters")
-print(f"{miles} miles")
-"""
-"""
+N = int(input("Введите N: "))
+M = int(input("Введите M: "))
+A = int(input("Введите A: "))
+tiles = (N // A) * (M // A)
+print(tiles)
 #4
-base = float(input("Введите длину основания треугольника: "))
-height = float(input("Введите высоту треугольника: "))
-
-area = 0.5 * base * height
-
-print("Площадь треугольника равна:", area)
-"""
-"""
+N = int(input("Введите число: "))
+binary = ''
+while N > 0:
+    binary = str(N % 2) + binary
+    N //= 2
+print(binary)
 #5
-num = input("Введите четырехзначное число: ")
-
-if len(num) != 4:
-print("Введите четырехзначное число.")
-else:
-reversed_num = num[::-1]
-print("Перевернутое число:", reversed_num)
-"""
-
+binary = input("Введите двоичное число: ")
+decimal = 0
+i = 0
+while binary:
+    decimal += (ord(binary[-1]) - ord('0')) * (2 ** i)
+    binary = binary[:-1]
+    i += 1
+print(decimal)
+#6
+S = int(input("Введите размер файла (МБ): "))
+V = int(input("Введите скорость (Мбит/с): "))
+time_sec = (S * 8) / V
+minutes = int(time_sec / 60)
+seconds = int(time_sec % 60)
+print(f"{minutes} минут(ы) {seconds} секунд(ы)")
