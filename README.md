@@ -1,46 +1,105 @@
+#Чаcть 2
+
 #1
-N = int(input("Введите число: "))
-reversed_number = 0
-while N > 0:
-    reversed_number = reversed_number * 10 + N % 10
-    N //= 10
-print(reversed_number)
+"""
+a = int(input("the number of day"))
+if a == 1:
+    print("Monday")
+elif a == 2:
+    print("Tuesday")
+elif a == 3:
+    print("Wednesday")
+elif a == 4:
+    print("Thursday")
+elif a == 5:
+    print("Friday")
+elif a == 6:
+    print("Saturday")
+elif a == 7:
+    print("Sundays")
+else:
+    print('Incorrect numb of day')
+"""
 #2
-N = int(input("Введите число: "))
-count = 0
-sum_cubes = 0
-while N > 0:
-    digit = N % 10
-    sum_cubes += digit * digit * digit
-    count += 1
-    N //= 10
-print(count, sum_cubes)
-#3
-N = int(input("Введите N: "))
-M = int(input("Введите M: "))
-A = int(input("Введите A: "))
-tiles = (N // A) * (M // A)
-print(tiles)
+"""
+a = int(input("the numder of day"))
+if a == 1:
+    print("Juanary")
+elif a == 2:
+    print("February")
+elif a == 3:
+    print("March")
+elif a == 4:
+    print("April")
+elif a == 5:
+    print("May")
+elif a == 6:
+    print("June")
+elif a == 7:
+    print("July")
+elif a == 8:
+    print("August")
+elif a == 9:
+    print("September")
+elif a == 10:
+    print("October")
+elif a == 11:
+    print("November")
+elif a == 12:
+    print("December")
+else:
+    print("Incorrect numb of month")
+"""
 #4
-N = int(input("Введите число: "))
-binary = ''
-while N > 0:
-    binary = str(N % 2) + binary
-    N //= 2
-print(binary)
+"""
+y = int(input("1st numb"))
+u = int(input("2nd numb"))
+if y==u:
+    print("the numb are equal")
+elif y>u:
+    print(y,u)
+else:
+    print(u,y)
+"""
+#3
+"""
+c = int(input("print the numb"))
+if c>0:
+    print("numb is negative")
+else:
+    print("numb is equal to zero")
+"""
+
+#1часть
+
 #5
-binary = input("Введите двоичное число: ")
-decimal = 0
-i = 0
-while binary:
-    decimal += (ord(binary[-1]) - ord('0')) * (2 ** i)
-    binary = binary[:-1]
-    i += 1
-print(decimal)
-#6
-S = int(input("Введите размер файла (МБ): "))
-V = int(input("Введите скорость (Мбит/с): "))
-time_sec = (S * 8) / V
-minutes = int(time_sec / 60)
-seconds = int(time_sec % 60)
-print(f"{minutes} минут(ы) {seconds} секунд(ы)")
+"""
+hour = int(input("number from 0 to 23"))
+if hour >= 0 and hour<6:
+    print("good night")
+elif hour >= 6 and hour<13:
+    print("good morning")
+elif hour >= 13 and hour<17:
+    print("good afteroom")
+elif hour>=17 and hour<24:
+    print("good evening")
+"""
+#3
+"""
+cost = int(input("Цена одной косоли"))
+much = int(input("кол-во консолей"))
+sale = int(input("% скидка"))
+if much == 1:
+    print(cost-(cost*(sale/100)))
+else:
+    print(much*(cost-(sale/100)))
+"""
+#2
+"""
+D = int(input("Диаметр окружности"))
+T = int(input("Скорость в 6/сек"))
+if T == 2:
+    print(0/2**2*3.14)
+elif T==1:
+    print(3.14*0)
+"""
